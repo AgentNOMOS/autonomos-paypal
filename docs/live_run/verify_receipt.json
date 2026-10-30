@@ -1,0 +1,21 @@
+{
+ "valid": true,
+ "checks": {
+  "signature": true,
+  "artifact_digest": true,
+  "artifact_bound_to_offer": true,
+  "event_chain_recomputes": true,
+  "event_chain_head_matches_receipt": true,
+  "payment_verdict_is_verified": true,
+  "issuer_key_is_trusted": true,
+  "ai_section_present": true,
+  "execution_label_wellformed": true,
+  "ai_record_matches_artifact": true,
+  "execution_label_consistent_with_evidence": true,
+  "validation_counts_match_artifact": true,
+  "artifact_not_failed": true,
+  "no_truth_verification_claimed": true,
+  "quotes_recheck_against_collection": true
+ },
+ "receipt_version": "2"
+}

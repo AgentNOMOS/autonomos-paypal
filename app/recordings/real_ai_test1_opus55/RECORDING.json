@@ -1,0 +1,38 @@
+{
+ "recording_id": "R1D1-REAL-AI-TEST1-OPUS55",
+ "what_this_is": "The raw text of ONE historical Claude Opus 5.5 response (Real AI Test 1, 2026-10-17), replayed offline. A replay is NOT a model call: it is labelled RECORDED_REPLAY and runs under MOCK_EXECUTION.",
+ "source": "r1d1/evidence_real_ai_test1 (sealed SHA256SUMS), via r1d2/app/tests/fixtures/real_ai_test1/PROVENANCE.json",
+ "historical_request_id": "req_011Cg7ZywMA4FMtZQC9G2QbX",
+ "historical_response_id": "msg_011Cg7ZyxapdVetD9AJbjkgE",
+ "model": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "usage": {
+  "input_tokens": 5975,
+  "output_tokens": 2152
+ },
+ "question": "What hardware evidence exists for the quantum-kernel experiment, and what is still unverified?",
+ "document_set": {
+  "id": "agentnomos_quantum",
+  "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57"
+ },
+ "passage_ids": [
+  "agentnomos_quantum/qkrl_README.md#p002",
+  "agentnomos_quantum/qkrl_README.md#p015",
+  "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p035",
+  "agentnomos_quantum/qrg_README.md#p002",
+  "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p000",
+  "agentnomos_quantum/qkrl_README.md#p008",
+  "agentnomos_quantum/qkrl_LIMITATIONS.md#p001",
+  "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p002",
+  "agentnomos_quantum/qkrl_PRIOR_WORK.md#p003",
+  "agentnomos_quantum/qkrl_README.md#p004",
+  "agentnomos_quantum/qkrl_README.md#p003",
+  "agentnomos_quantum/qkrl_WITHHELD_EVIDENCE.md#p004",
+  "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p020",
+  "agentnomos_quantum/qkrl_README.md#p006"
+ ],
+ "passage_cap_chars": 1500,
+ "provided_digest": "b68bc0c28e70dd80840e3d917b5206036e0dcceaa5682f3d7c229506759c8df1",
+ "raw_output_sha256": "d43d60e8dcb3fd6ef589c7e1fc840ff19935d91e9dfb596182ee9879eb856eb6",
+ "recorded_utc": "2026-10-17T09:26:16Z"
+}

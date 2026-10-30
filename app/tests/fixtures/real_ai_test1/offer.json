@@ -1,0 +1,10 @@
+{
+ "offer_id": "OFFER-0400E999CB9D",
+ "task_id": "TASK-2A5B712F8B93",
+ "question": "What hardware evidence exists for the quantum-kernel experiment, and what is still unverified?",
+ "document_set": {
+  "id": "agentnomos_quantum",
+  "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57"
+ },
+ "max_findings": 5
+}

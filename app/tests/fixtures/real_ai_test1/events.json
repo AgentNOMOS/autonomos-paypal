@@ -1,0 +1,138 @@
+[
+ {
+  "seq": 1,
+  "ts": 1792229157.214277,
+  "from": null,
+  "to": "TASK_REQUESTED",
+  "actor": "buyer",
+  "evidence_kind": "request",
+  "evidence_digest": "740e10ede1cc2c35f39f7ce97e990fd3fa9249b518bd670e27bbfbe90d55d1b4",
+  "detail": {},
+  "prev_hash": "GENESIS",
+  "hash": "2e69db52aecd4543c0312c57e5cb91011329342e864d3e68073ddc77a6655e60"
+ },
+ {
+  "seq": 2,
+  "ts": 1792229157.231142,
+  "from": "TASK_REQUESTED",
+  "to": "OFFER_ISSUED",
+  "actor": "policy",
+  "evidence_kind": "offer",
+  "evidence_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2",
+  "detail": {
+   "offer_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2"
+  },
+  "prev_hash": "2e69db52aecd4543c0312c57e5cb91011329342e864d3e68073ddc77a6655e60",
+  "hash": "3c512c637d762fc863f2bf2b52f4c2bc83e4c06395192ae39714d3a4c3837a12"
+ },
+ {
+  "seq": 3,
+  "ts": 1792229157.236456,
+  "from": "OFFER_ISSUED",
+  "to": "BUYER_APPROVAL_REQUIRED",
+  "actor": "policy",
+  "evidence_kind": "offer",
+  "evidence_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2",
+  "detail": {
+   "offer_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2"
+  },
+  "prev_hash": "3c512c637d762fc863f2bf2b52f4c2bc83e4c06395192ae39714d3a4c3837a12",
+  "hash": "65bbab366aaebe97a30791417078cfe9e606ff4c4c547d82cdd2a0f2af988dc7"
+ },
+ {
+  "seq": 4,
+  "ts": 1792229157.26933,
+  "from": "BUYER_APPROVAL_REQUIRED",
+  "to": "ORDER_CREATED",
+  "actor": "payment_gateway",
+  "evidence_kind": "provider_order",
+  "evidence_digest": "9551e4e14aa3262c9d0024d809cc18a341c0c4e34de03ee5f5dc19e86fdee69b",
+  "detail": {
+   "order_id": "MOCK-ORDER-000001",
+   "request_id": "autonomos-order-OFFER-0400E999CB9D"
+  },
+  "prev_hash": "65bbab366aaebe97a30791417078cfe9e606ff4c4c547d82cdd2a0f2af988dc7",
+  "hash": "4f57138e6406aee9d2d261222ba1cf627344d1a1064821b2ea63f23d1ff9e957"
+ },
+ {
+  "seq": 5,
+  "ts": 1792229157.280393,
+  "from": "ORDER_CREATED",
+  "to": "PAYMENT_PENDING",
+  "actor": "payment_gateway",
+  "evidence_kind": "approval_link",
+  "evidence_digest": "2b80aa814c17f30203bf1974ea8dbc85970f15163716ba4facf73a56ab5a9fd9",
+  "detail": {},
+  "prev_hash": "4f57138e6406aee9d2d261222ba1cf627344d1a1064821b2ea63f23d1ff9e957",
+  "hash": "61a855355d59e43de9ba4547e7325189c52f62455af04fa2f81c65d3e546e5d0"
+ },
+ {
+  "seq": 6,
+  "ts": 1792229157.315688,
+  "from": "PAYMENT_PENDING",
+  "to": "PAYMENT_CAPTURED",
+  "actor": "payment_verifier",
+  "evidence_kind": "payment_verification",
+  "evidence_digest": "3095e0b4264982fc9684fc1eb46f6af8b1caedddda6bd839380d4f1319c434d5",
+  "detail": {
+   "capture_id": "MOCK-CAPTURE-000001"
+  },
+  "prev_hash": "61a855355d59e43de9ba4547e7325189c52f62455af04fa2f81c65d3e546e5d0",
+  "hash": "2837c770851763a054c7028dc3f35e464e256b372bd1539624aa26c0bf9b5239"
+ },
+ {
+  "seq": 7,
+  "ts": 1792229157.319783,
+  "from": "PAYMENT_CAPTURED",
+  "to": "EXECUTION_AUTHORIZED",
+  "actor": "payment_verifier",
+  "evidence_kind": "payment_verification",
+  "evidence_digest": "3095e0b4264982fc9684fc1eb46f6af8b1caedddda6bd839380d4f1319c434d5",
+  "detail": {},
+  "prev_hash": "2837c770851763a054c7028dc3f35e464e256b372bd1539624aa26c0bf9b5239",
+  "hash": "b83ae59984fce4702b99e276432c46eb3db7a4cca9b33c9055ef8fec49dfb913"
+ },
+ {
+  "seq": 8,
+  "ts": 1792229157.330776,
+  "from": "EXECUTION_AUTHORIZED",
+  "to": "EXECUTING",
+  "actor": "executor",
+  "evidence_kind": "execution_claim",
+  "evidence_digest": "e0175e824aefca0ba23502a571cacb0aa33e1c4197142f7a4fbc3948ea2f9fec",
+  "detail": {
+   "execution_id": "EXEC-AF2F9F8986DF"
+  },
+  "prev_hash": "b83ae59984fce4702b99e276432c46eb3db7a4cca9b33c9055ef8fec49dfb913",
+  "hash": "b4c50be915126d1ca14e726a76cf47c4d8c72f40c6922916f2a7f34b8109c233"
+ },
+ {
+  "seq": 9,
+  "ts": 1792229176.608963,
+  "from": "EXECUTING",
+  "to": "DELIVERY_VERIFIED",
+  "actor": "artifact_verifier",
+  "evidence_kind": "artifact_verification",
+  "evidence_digest": "af7f35ed23b933d78bb8b50ad6807a0182a6306ed4c06ade1ac6a1bfe6bec2a0",
+  "detail": {
+   "artifact_digest": "4b68da684dbf55c582a317c56bafcaf9ad28c59c5a44131e969dee951c981f20",
+   "status": "PARTIAL"
+  },
+  "prev_hash": "b4c50be915126d1ca14e726a76cf47c4d8c72f40c6922916f2a7f34b8109c233",
+  "hash": "ebafffba2e4d09c1bc5f1d63ffa99068db6c4737a3da760d3dbae16b38de128c"
+ },
+ {
+  "seq": 10,
+  "ts": 1792229176.653886,
+  "from": "DELIVERY_VERIFIED",
+  "to": "DELIVERED",
+  "actor": "receipt_issuer",
+  "evidence_kind": "receipt",
+  "evidence_digest": "d21e2c1657c3270bf7cad40f4f034ce7e235fadff77ad7697989e38a6c11c5a3",
+  "detail": {
+   "receipt_digest": "d21e2c1657c3270bf7cad40f4f034ce7e235fadff77ad7697989e38a6c11c5a3"
+  },
+  "prev_hash": "ebafffba2e4d09c1bc5f1d63ffa99068db6c4737a3da760d3dbae16b38de128c",
+  "hash": "b80e6378101e5b5d56228dc7e05b3791cda9525b428f9271ba2c67a90bf748d6"
+ }
+]

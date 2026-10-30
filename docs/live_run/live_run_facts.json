@@ -1,0 +1,15 @@
+{
+ "date_utc": "2026-10-30",
+ "release_candidate": "r1e1",
+ "payment": {"provider": "paypal_sandbox", "orders": 1, "capture_requests": 1, "capture_status": "COMPLETED",
+             "verification_verdict": "CAPTURE_VERIFIED", "checks_passed": 9, "checks_total": 9,
+             "order_id_masked": "2YN2…804X", "capture_id_masked": "6WW2…2250", "amount": "1.00 USD (Sandbox test money)"},
+ "ai": {"provider": "anthropic_messages", "model_requested": "claude-opus-5-5", "model_reported": "claude-opus-5-5",
+        "requests": 1, "request_id": "req_011CgZ1yhXaPsmUvW3V3cs1u", "input_tokens": 5882, "output_tokens": 1849,
+        "cost_usd_at_internal_conservative_rates": "0.0665588", "worst_case_reserved_usd": "0.3405864", "ceiling_usd": "0.50"},
+ "timeline_utc": {"order_created": "20:00:24", "payment_captured_and_execution_authorized": "20:01:42", "delivered": "20:01:59"},
+ "research": {"completeness": "PARTIAL", "rule": "R1E1-SUPPORT-1", "findings": 5, "document_supported": 4, "unconfirmed": 1,
+              "independent_truth": "NOT_INDEPENDENTLY_VERIFIED (0/5)"},
+ "receipt": {"valid": true, "checks_passed": 15, "checks_total": 15, "signing_key": "local demo Ed25519 key generated for this run"},
+ "earlier_attempt_same_evening": {"outcome": "CANCELLED at PayPal checkout", "orders": 1, "captures": 0, "ai_requests": 0}
+}

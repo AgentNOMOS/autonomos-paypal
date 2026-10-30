@@ -1,0 +1,17 @@
+{
+ "source": "r1d1/evidence_real_ai_test1 (sealed by its SHA256SUMS; R1D1 Real AI Test 1, 2026-10-17)",
+ "raw_output_txt": "r1d_ai_records.raw_output of autonomos.sqlite, read with sqlite mode=ro&immutable=1, bytes unchanged",
+ "raw_output_sha256": "d43d60e8dcb3fd6ef589c7e1fc840ff19935d91e9dfb596182ee9879eb856eb6",
+ "equals": [
+  "artifact.raw_report_digest",
+  "artifact.model_runs[0].output_sha256"
+ ],
+ "copied_files_sha256": {
+  "artifact.json": "8ead0d70396d146bc961b9f17b573bf38fc07f6dd27655bf33b6c787df22d72e",
+  "receipt.json": "fcf4bbc5f4e0a50ebda4c4bdf6aae8e553a1da7ce2cc51e8ed847753986444ba",
+  "events.json": "407f7ae82c5d4779d1d81415aab413b7f16f373f7ed245d603bbc573cb819a11",
+  "issuer_public_key.hex": "b923c8e1aa2f281475f7e180f9aaf273653d4859932d05f51ce14f97f0fd6b1e",
+  "autonomos.sqlite": "ffc51a4178cf69d6867f1c8e31f4bd9adc773d77669589e8c381aeae522c4c3d"
+ },
+ "note": "Frozen regression fixture. Historical model output of request req_011Cg7ZywMA4FMtZQC9G2QbX; never re-sent."
+}

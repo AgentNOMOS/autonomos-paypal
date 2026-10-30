@@ -1,0 +1,9 @@
+{
+ "title": "AgentNOMOS quantum research documents (public, MIT)",
+ "note": "Unmodified copies of documentation files from three public MIT-licensed AgentNOMOS repositories, renamed with a repository prefix. Licences in licenses/.",
+ "sources": [
+  {"prefix": "qkrl_", "repository": "https://github.com/AgentNOMOS/quantum-kernel-reproducibility-lab", "commit": "db50fa2e50848ce559bcdeb61e4a86279368fe42", "license": "MIT (code and documentation, scoped by its PUBLICATION_RIGHTS_MATRIX.md)", "files": ["README.md", "docs/LIMITATIONS.md", "docs/PROVENANCE.md", "docs/PRIOR_WORK.md", "docs/IONQ_HARDWARE_PLAN.md", "docs/REPRODUCIBILITY.md", "WITHHELD_EVIDENCE.md"]},
+  {"prefix": "qcc_", "repository": "https://github.com/AgentNOMOS/quantum-claim-court", "commit": "32d1357dc567034775d7e612b3092f54df2c8fa4", "license": "MIT", "files": ["README.md"]},
+  {"prefix": "qrg_", "repository": "https://github.com/AgentNOMOS/quantum-research-governor", "commit": "289a8c2159c551a47542a49d5b6d5310e35fe87d", "license": "MIT", "files": ["README.md"]}
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "payment_provider": "PAYPAL_SANDBOX",
+ "ai_provider": "anthropic_messages",
+ "ai_execution_class": "REAL_MODEL_EXECUTION",
+ "ai_note": "one real model request through the governed ledger",
+ "real_model_inference": true,
+ "delivery_status": "DELIVERED",
+ "delivery_note": "protocol outcome only: payment verified, artifact checks passed, receipt issued; it does not mean the research is complete",
+ "artifact_status": "VERIFIED",
+ "research_completeness": "PARTIAL",
+ "research_completeness_basis": "recorded by R1E1-VERIFIER-1",
+ "research_completeness_reasons": [
+  "1 delivered claim(s) not confirmed",
+  "model summary withheld",
+  "1 not-established statement(s) withheld"
+ ],
+ "claim_support": {
+  "rule": "R1E1-SUPPORT-1",
+  "model_findings": 5,
+  "supported": 4,
+  "unconfirmed": 1,
+  "withheld": 0,
+  "rejected": 0
+ },
+ "claim_support_verdict": "PARTIAL",
+ "independent_truth": "NOT_INDEPENDENTLY_VERIFIED (0/5)",
+ "headline": "DELIVERED \u00b7 payment PAYPAL_SANDBOX \u00b7 AI anthropic_messages \u00b7 research PARTIAL \u00b7 claims 4/5 document-supported \u00b7 truth not independently verified"
+}

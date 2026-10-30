@@ -1,0 +1,437 @@
+{
+ "ai_execution": {
+  "authorization_ref": "AIAUTH-20261017-TEST1",
+  "cost": {
+   "authorization_totals_after": {
+    "execution_ids": [
+     "EXEC-AF2F9F8986DF"
+    ],
+    "requests": 1,
+    "tokens": 8127,
+    "usd": "0.073634"
+   },
+   "estimated_charge_usd": "0.073634",
+   "price_basis": "OWNER_CONFIRMED (>= reference table)",
+   "worst_case_usd": "0.3405864"
+  },
+  "execution_class": "REAL_MODEL_EXECUTION",
+  "execution_policy": {
+   "allowed_payment_environments": [
+    "MOCK"
+   ],
+   "authorization_id": "AIAUTH-20261017-TEST1",
+   "bound_data_dir": "/root/.config/autonomos-paypal/r1d-real-ai-test-1/var",
+   "effort": "medium",
+   "execution_class": "REAL_MODEL_EXECUTION",
+   "input_estimate_overhead_tokens": 4000,
+   "max_executions": 1,
+   "max_input_tokens_per_request": 34000,
+   "max_output_tokens_per_request": 12000,
+   "max_requests_per_execution": 1,
+   "max_requests_total": 1,
+   "max_total_tokens": 46000,
+   "max_usd_total": "0.50",
+   "model": "claude-opus-5-5",
+   "not_after": 1792303200.0,
+   "price_basis": "OWNER_CONFIRMED (>= reference table)",
+   "price_usd_per_mtok": {
+    "input": "4.40",
+    "output": "22.00"
+   },
+   "provider": "anthropic_messages",
+   "request_timeout_s": 600.0
+  },
+  "model_requests": 1,
+  "outcome": "VERIFICATION_PARTIAL",
+  "provider": "anthropic_messages",
+  "reported_models": [
+   "claude-opus-5-5"
+  ],
+  "requested_model": "claude-opus-5-5",
+  "requests": [
+   {
+    "call_id": "AICALL-3F67541951E1",
+    "charged_usd": "0.073634",
+    "est_input_tokens_max": 17406,
+    "max_output_tokens": 12000,
+    "model": "claude-opus-5-5",
+    "provider": "anthropic_messages",
+    "request_digest": "9ecf64ef163323c9865ee5fbe16ff88ab28e9e392e733f316d93bc56e243c4b3",
+    "request_id": "req_011Cg7ZywMA4FMtZQC9G2QbX",
+    "response_digest": "7b57bfaedf9723496b06a257851c4fbb89a9e130272904d9bce2fd5bb0f4c0b1",
+    "response_id": "msg_011Cg7ZyxapdVetD9AJbjkgE",
+    "seq": 1,
+    "state": "COMPLETED",
+    "stop_reason": "end_turn",
+    "transport": "https://api.anthropic.com/v1/messages",
+    "usage": {
+     "input_tokens": 5975,
+     "output_tokens": 2152
+    }
+   }
+  ],
+  "source_collection": {
+   "files": {
+    "qcc_README.md": "1e2b9cd5945d97467f66604e7d4a7fea4ae54f957da83901ff9886556ed025ac",
+    "qkrl_IONQ_HARDWARE_PLAN.md": "1b35b3318d96d74ba299f9b993cb44934c88b8ad825edef738ede047cad5634b",
+    "qkrl_LIMITATIONS.md": "2ee2ee3ecf2bf5ed4bbefab334adf6db7e87395810daa06fc1606390e93edcfb",
+    "qkrl_PRIOR_WORK.md": "137fc3a21009c31faf508464e9f08abaede6c04a97f3c2f25a4f16451c8c2cf0",
+    "qkrl_PROVENANCE.md": "ee5a6d8387288c37c9b1c036d6c3f564a1aefeaa2816e81063c3646bb4a09727",
+    "qkrl_README.md": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10",
+    "qkrl_REPRODUCIBILITY.md": "252ebcd55a977eff0e651fb19ce7a84193d4b76be31b75c78ba1b3abd373410e",
+    "qkrl_WITHHELD_EVIDENCE.md": "180abdd7c45119233ff7e626ee40fa20cd709b3549b6d6f59dc47f515221e7b5",
+    "qrg_README.md": "f4fd2d65355dffd5fb5f0e563afaced4518d008f653186d89c27f9c9f0fa4bc5"
+   },
+   "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57",
+   "set_id": "agentnomos_quantum"
+  },
+  "token_usage": {
+   "cache_read_tokens": 0,
+   "cache_write_tokens": 0,
+   "input_tokens": 5975,
+   "output_tokens": 2152
+  }
+ },
+ "artifact_version": "2",
+ "delivery_verification": {
+  "checks": [
+   {
+    "check": "bound_to_offer",
+    "detail": "artifact names the paid offer, task and question",
+    "ok": true
+   },
+   {
+    "check": "document_set_matches_offer",
+    "detail": "collection re-loaded and re-hashed at execution time equals the priced collection",
+    "ok": true
+   },
+   {
+    "check": "no_payment_fields_in_model_output",
+    "detail": "",
+    "ok": true
+   },
+   {
+    "check": "passages_shown_belong_to_collection",
+    "detail": "every excerpt is a pinned passage",
+    "ok": true
+   },
+   {
+    "check": "at_least_one_verified_finding",
+    "detail": "4 delivered, 1 removed",
+    "ok": true
+   }
+  ],
+  "cited_sources": {
+   "qkrl_LIMITATIONS.md": "2ee2ee3ecf2bf5ed4bbefab334adf6db7e87395810daa06fc1606390e93edcfb",
+   "qkrl_README.md": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10"
+  },
+  "collection_manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57",
+  "counts": {
+   "claim_supported": 3,
+   "claim_unconfirmed": 1,
+   "delivered": 4,
+   "model_findings": 5,
+   "rejected": 0,
+   "truth_independently_verified": 0,
+   "withheld": 1
+  },
+  "decisions": [
+   {
+    "decision": "WITHHELD",
+    "finding_id": "F1",
+    "quote_status": "QUOTE_VERIFIED",
+    "reasons": [
+     "EXECUTION_ASSERTION_NOT_IN_QUOTE"
+    ]
+   },
+   {
+    "claim_status": "CLAIM_UNCONFIRMED",
+    "decision": "DELIVERED",
+    "finding_id": "F2",
+    "reasons": [
+     "LEXICAL_COVERAGE_BELOW_0.8"
+    ]
+   },
+   {
+    "claim_status": "CLAIM_SUPPORTED",
+    "decision": "DELIVERED",
+    "finding_id": "F3",
+    "reasons": []
+   },
+   {
+    "claim_status": "CLAIM_SUPPORTED",
+    "decision": "DELIVERED",
+    "finding_id": "F4",
+    "reasons": []
+   },
+   {
+    "claim_status": "CLAIM_SUPPORTED",
+    "decision": "DELIVERED",
+    "finding_id": "F5",
+    "reasons": []
+   }
+  ],
+  "input_flags": [],
+  "method": "R1d deterministic verifier: source membership, anchor resolution, verbatim quote match, claim screen, class cues, lexical support; model output never trusted as-is",
+  "quotes_checked": 4,
+  "rejected_findings": 1,
+  "rules": {
+   "claim": "R1D-LEX-1 (CLAIM_SUPPORTED): screen passed (including negation agreement), class confirmed, and at least 80% of the claim's content words (stop and framing words removed, light suffix stemming) occur in the quotation. Lexical support only, not semantic entailment.",
+   "class": "R1D-CLASS-1: the model's evidence class is confirmed only if the quotation contains that class's cue words (table in verifier.CLASS_CUES); otherwise the class is shown as the model's proposal.",
+   "normalization": "R1D-NORM-1: runs of whitespace (Python regex \\s) collapse to one space and leading/trailing whitespace is trimmed, on both sides. Nothing else: no case folding, no Unicode normalization, no quote-mark, dash or ellipsis folding, no markdown stripping, no fragment joining.",
+   "quote": "R1D-QUOTE-1: the normalized quotation (12-400 characters) is a contiguous substring of the normalized excerpt of the cited passage that was shown to the model; the passage belongs to the approved collection whose bytes were re-hashed at execution time and match the offer.",
+   "screen": "R1D-SCREEN-1 (hard; failure = WITHHELD): every number in the claim occurs in the quotation; the claim and the quotation agree on negation (both or neither contain a negation word); a claim that asserts a completed execution on a platform needs a quotation that asserts a completed execution on that platform, without negation or plan wording; a claim of quantum advantage or of independent verification needs a quotation that asserts the same without negation; the cited passage carries no instruction-like text.",
+   "truth": "NOT_INDEPENDENTLY_VERIFIED: the finding reports what the named document states."
+  },
+  "status": "PARTIAL",
+  "verified_findings": 4
+ },
+ "document_set": {
+  "id": "agentnomos_quantum",
+  "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57"
+ },
+ "engine": "R1D-RESEARCH-1",
+ "flagged_passages": [],
+ "framing": {
+  "delimiter": "per-execution random tag (sha256(execution_id|offer_id)[:16])",
+  "schema_digest": "ddecbab99954f41c583fdfa1dee8681e8d8f8c65eac64bde5b0f527e4adfef97",
+  "system_sha256": "e2d31a49fdd462a64e1f5e332542b5c94b0f1b00c49abae26aefefa426f65664",
+  "user_sha256": "c6fb87239644f76aff8a0fb79448acd495bc3019825ba1910c2628960122501d"
+ },
+ "input_flags": [],
+ "model_runs": [
+  {
+   "execution_class": "REAL_MODEL_EXECUTION",
+   "ledger_call_id": "AICALL-3F67541951E1",
+   "model": "claude-opus-5-5",
+   "output_sha256": "d43d60e8dcb3fd6ef589c7e1fc840ff19935d91e9dfb596182ee9879eb856eb6",
+   "provider": "anthropic_messages",
+   "request_digest": "9ecf64ef163323c9865ee5fbe16ff88ab28e9e392e733f316d93bc56e243c4b3",
+   "request_id": "req_011Cg7ZywMA4FMtZQC9G2QbX",
+   "requested_model": "claude-opus-5-5",
+   "response_digest": "7b57bfaedf9723496b06a257851c4fbb89a9e130272904d9bce2fd5bb0f4c0b1",
+   "response_id": "msg_011Cg7ZyxapdVetD9AJbjkgE",
+   "schema_digest": "ddecbab99954f41c583fdfa1dee8681e8d8f8c65eac64bde5b0f527e4adfef97",
+   "stop_reason": "end_turn",
+   "system_sha256": "e2d31a49fdd462a64e1f5e332542b5c94b0f1b00c49abae26aefefa426f65664",
+   "transport": "https://api.anthropic.com/v1/messages",
+   "usage": {
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "inference_geo": "global",
+    "input_tokens": 5975,
+    "output_tokens": 2152,
+    "output_tokens_details": {
+     "thinking_tokens": 484
+    },
+    "service_tier": "standard",
+    "speed": "standard"
+   },
+   "user_sha256": "c6fb87239644f76aff8a0fb79448acd495bc3019825ba1910c2628960122501d",
+   "wall_s": 19.158
+  }
+ ],
+ "offer_id": "OFFER-0400E999CB9D",
+ "question": "What hardware evidence exists for the quantum-kernel experiment, and what is still unverified?",
+ "raw_report_digest": "d43d60e8dcb3fd6ef589c7e1fc840ff19935d91e9dfb596182ee9879eb856eb6",
+ "report": {
+  "class_coverage": {
+   "CLASSICAL_SIMULATION_OR_EXACT": 0,
+   "COMPILED_ONLY": 1,
+   "HARDWARE_EXECUTION": 0,
+   "PLANNED_NOT_PERFORMED": 0,
+   "RAW_EVIDENCE_AVAILABILITY": 1,
+   "REPORTED_HARDWARE_RESULT": 1,
+   "UNKNOWN_OR_UNSUPPORTED": 1
+  },
+  "confidence": null,
+  "findings": [
+   {
+    "anchor": "agentnomos_quantum/qkrl_README.md#p004",
+    "claim": "[QUOTE_VERIFIED \u00b7 CLAIM_UNCONFIRMED \u00b7 REPORTED_HARDWARE_RESULT] The documents report a surviving contrast f of 0.0048 (95 % CI 0.0033 \u2013 0.0065) from a global-depolarising fit, compared with 1 in the exact noise-free case.",
+    "claim_rule": "R1D-LEX-1",
+    "claim_status": "CLAIM_UNCONFIRMED",
+    "claim_text": "The documents report a surviving contrast f of 0.0048 (95 % CI 0.0033 \u2013 0.0065) from a global-depolarising fit, compared with 1 in the exact noise-free case.",
+    "claim_unconfirmed_reasons": [
+     "LEXICAL_COVERAGE_BELOW_0.8"
+    ],
+    "class_confirmed": true,
+    "evidence": [
+     {
+      "passage_id": "agentnomos_quantum/qkrl_README.md#p004",
+      "quote": "| surviving contrast f, global-depolarising fit | 1 | **0.0048** (95 % CI 0.0033 \u2013 0.0065) |"
+     }
+    ],
+    "evidence_class": "REPORTED_HARDWARE_RESULT",
+    "finding_id": "F2",
+    "model_limitation": "The documents report this result, but raw hardware measurements were not provided, so it cannot be recomputed.",
+    "quote_status": "QUOTE_VERIFIED",
+    "source_document": "qkrl_README.md",
+    "source_sha256": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10",
+    "support_detail": {
+     "class_confirmed": true,
+     "content_words": 11,
+     "lexical_coverage": 0.545,
+     "negation_parity": true
+    },
+    "truth_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "verifier_note": "The documents report this result, but raw hardware measurements were not provided to AutoNOMOS; not independently verified."
+   },
+   {
+    "anchor": "agentnomos_quantum/qkrl_README.md#p008",
+    "claim": "[QUOTE_VERIFIED \u00b7 CLAIM_SUPPORTED (R1D-LEX-1) \u00b7 RAW_EVIDENCE_AVAILABILITY] The raw IBM job files and provider metadata are not in the repository until redistribution rights are confirmed.",
+    "claim_rule": "R1D-LEX-1",
+    "claim_status": "CLAIM_SUPPORTED",
+    "claim_text": "The raw IBM job files and provider metadata are not in the repository until redistribution rights are confirmed.",
+    "claim_unconfirmed_reasons": [],
+    "class_confirmed": true,
+    "evidence": [
+     {
+      "passage_id": "agentnomos_quantum/qkrl_README.md#p008",
+      "quote": "Its raw job files and provider metadata are not in this repository until redistribution rights are confirmed (`WITHHELD_EVIDENCE.md`)."
+     }
+    ],
+    "evidence_class": "RAW_EVIDENCE_AVAILABILITY",
+    "finding_id": "F3",
+    "model_limitation": "Independent verification of the hardware numbers is not possible from the supplied materials.",
+    "quote_status": "QUOTE_VERIFIED",
+    "source_document": "qkrl_README.md",
+    "source_sha256": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10",
+    "support_detail": {
+     "class_confirmed": true,
+     "content_words": 10,
+     "lexical_coverage": 0.9,
+     "negation_parity": true
+    },
+    "truth_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "verifier_note": "Availability as described by the documents; AutoNOMOS did not inspect the evidence."
+   },
+   {
+    "anchor": "agentnomos_quantum/qkrl_README.md#p008",
+    "claim": "[QUOTE_VERIFIED \u00b7 CLAIM_SUPPORTED (R1D-LEX-1) \u00b7 COMPILED_ONLY] The 144-ZZ and 108-ZZ circuits have only been compiled and verified locally. Neither has run on IonQ hardware.",
+    "claim_rule": "R1D-LEX-1",
+    "claim_status": "CLAIM_SUPPORTED",
+    "claim_text": "The 144-ZZ and 108-ZZ circuits have only been compiled and verified locally. Neither has run on IonQ hardware.",
+    "claim_unconfirmed_reasons": [],
+    "class_confirmed": true,
+    "evidence": [
+     {
+      "passage_id": "agentnomos_quantum/qkrl_README.md#p008",
+      "quote": "The 144-ZZ (original structure) and 108-ZZ (simplified) circuits have only been compiled and verified locally. Neither has run on IonQ hardware."
+     }
+    ],
+    "evidence_class": "COMPILED_ONLY",
+    "finding_id": "F4",
+    "model_limitation": "No IonQ hardware data exists. The IonQ experiment is only planned.",
+    "quote_status": "QUOTE_VERIFIED",
+    "source_document": "qkrl_README.md",
+    "source_sha256": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10",
+    "support_detail": {
+     "class_confirmed": true,
+     "content_words": 10,
+     "lexical_coverage": 1.0,
+     "negation_parity": true
+    },
+    "truth_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "verifier_note": "Compiled-only per the documents; no hardware execution is implied."
+   },
+   {
+    "anchor": "agentnomos_quantum/qkrl_LIMITATIONS.md#p001",
+    "claim": "[QUOTE_VERIFIED \u00b7 CLAIM_SUPPORTED (R1D-LEX-1) \u00b7 UNKNOWN_OR_UNSUPPORTED] IonQ's server-side handling, ZZ angle limits and precision, and gate parallelism are unverified until IonQ/Qollab confirm them or a run occurs.",
+    "claim_rule": "R1D-LEX-1",
+    "claim_status": "CLAIM_SUPPORTED",
+    "claim_text": "IonQ's server-side handling, ZZ angle limits and precision, and gate parallelism are unverified until IonQ/Qollab confirm them or a run occurs.",
+    "claim_unconfirmed_reasons": [],
+    "class_confirmed": true,
+    "evidence": [
+     {
+      "passage_id": "agentnomos_quantum/qkrl_LIMITATIONS.md#p001",
+      "quote": "IonQ's server-side handling, ZZ angle limits and precision, and gate parallelism are unverified until IonQ/Qollab confirm them or a run occurs."
+     }
+    ],
+    "evidence_class": "UNKNOWN_OR_UNSUPPORTED",
+    "finding_id": "F5",
+    "model_limitation": "The locally compiled IonQ gate counts may not reflect actual device behaviour.",
+    "quote_status": "QUOTE_VERIFIED",
+    "source_document": "qkrl_LIMITATIONS.md",
+    "source_sha256": "2ee2ee3ecf2bf5ed4bbefab334adf6db7e87395810daa06fc1606390e93edcfb",
+    "support_detail": {
+     "class_confirmed": true,
+     "content_words": 18,
+     "lexical_coverage": 1.0,
+     "negation_parity": true
+    },
+    "truth_status": "NOT_INDEPENDENTLY_VERIFIED",
+    "verifier_note": "Stated by the documents as unknown, unconfirmed or not claimed."
+   }
+  ],
+  "model_summary_unverified": null,
+  "model_summary_withheld": {
+   "reasons": [
+    "NUMBER_NOT_IN_ANY_VERIFIED_QUOTE ['0', '4096', '5', '591', '73', '9']"
+   ]
+  },
+  "not_established_withheld": [
+   {
+    "reasons": [
+     "NUMBER_NOT_IN_ANY_VERIFIED_QUOTE ['5', '9']"
+    ],
+    "text": "Full kernel matrix or classifier on hardware: Not established by the supplied evidence. Only 5 kernel entries were measured on hardware. The 9\u00d79 Gram matrix is exact classical computation only, and no classifier result was obtained on hardware."
+   }
+  ],
+  "removed_findings": [
+   {
+    "anchor": "agentnomos_quantum/qkrl_PRIOR_WORK.md#p003",
+    "claim": "The project documents report that one IBM job ran the exact 9-qubit kernel circuit for 5 frozen kernel entries, at 4096 shots each.",
+    "decision": "WITHHELD",
+    "finding_id": "F1",
+    "quote_status": "QUOTE_VERIFIED",
+    "reasons": [
+     "EXECUTION_ASSERTION_NOT_IN_QUOTE"
+    ]
+   }
+  ],
+  "summary": "[REAL_MODEL_EXECUTION] 4 finding(s) delivered; each quotation was found verbatim in the named pinned document. 3 met the lexical claim-support rule R1D-LEX-1; 1 are quote-verified but their claims are NOT confirmed (read the quotation). 1 withheld and 0 rejected by the verifier. No finding is independently verified as true. No confirmed finding for: HARDWARE_EXECUTION, CLASSICAL_SIMULATION_OR_EXACT, PLANNED_NOT_PERFORMED - not established by the supplied evidence.",
+  "unanswered": [
+   "HARDWARE_EXECUTION: not established by the supplied evidence (no confirmed finding).",
+   "CLASSICAL_SIMULATION_OR_EXACT: not established by the supplied evidence (no confirmed finding).",
+   "PLANNED_NOT_PERFORMED: not established by the supplied evidence (no confirmed finding).",
+   "MODEL-STATED LIMITATION (not verified): Independent verification of IBM results: Independent verification unavailable. Raw IBM job files are withheld, so the reported values cannot be recomputed.",
+   "MODEL-STATED LIMITATION (not verified): IonQ hardware results: Not established by the supplied evidence. No IonQ job has been run and the payloads were never submitted.",
+   "MODEL-STATED LIMITATION (not verified): Reproducibility and calibration drift: Not established by the supplied evidence. There was a single run with no replicates, and calibration drift is not characterised."
+  ],
+  "uncertainties": [
+   "NOT_INDEPENDENTLY_VERIFIED: the finding reports what the named document states.",
+   "REPORTED_HARDWARE_RESULT: The documents report this result, but raw hardware measurements were not provided to AutoNOMOS; not independently verified.",
+   "RAW_EVIDENCE_AVAILABILITY: Availability as described by the documents; AutoNOMOS did not inspect the evidence.",
+   "COMPILED_ONLY: Compiled-only per the documents; no hardware execution is implied.",
+   "UNKNOWN_OR_UNSUPPORTED: Stated by the documents as unknown, unconfirmed or not claimed."
+  ]
+ },
+ "retrieval": {
+  "method": "BM25 over pinned passages: the question (k=8) plus one fixed probe per evidence class; deterministic, no model involvement",
+  "passage_cap_chars": 1500,
+  "passage_ids": [
+   "agentnomos_quantum/qkrl_README.md#p002",
+   "agentnomos_quantum/qkrl_README.md#p015",
+   "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p035",
+   "agentnomos_quantum/qrg_README.md#p002",
+   "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p000",
+   "agentnomos_quantum/qkrl_README.md#p008",
+   "agentnomos_quantum/qkrl_LIMITATIONS.md#p001",
+   "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p002",
+   "agentnomos_quantum/qkrl_PRIOR_WORK.md#p003",
+   "agentnomos_quantum/qkrl_README.md#p004",
+   "agentnomos_quantum/qkrl_README.md#p003",
+   "agentnomos_quantum/qkrl_WITHHELD_EVIDENCE.md#p004",
+   "agentnomos_quantum/qkrl_IONQ_HARDWARE_PLAN.md#p020",
+   "agentnomos_quantum/qkrl_README.md#p006"
+  ],
+  "provided_digest": "b68bc0c28e70dd80840e3d917b5206036e0dcceaa5682f3d7c229506759c8df1"
+ },
+ "task_id": "TASK-2A5B712F8B93"
+}

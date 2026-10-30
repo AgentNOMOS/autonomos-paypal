@@ -1,0 +1,5 @@
+.env
+var/
+*.sqlite
+demo_receipt_key.json
+__pycache__/

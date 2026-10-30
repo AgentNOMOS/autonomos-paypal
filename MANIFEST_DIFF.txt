@@ -1,0 +1,7 @@
+changed-or-new: app/README.md
+changed-or-new: app/.env.example
+changed-or-new: LICENSE
+changed-or-new: README.md
+changed-or-new: .gitignore
+removed: app/LICENSE.PROPOSED
+new: docs/

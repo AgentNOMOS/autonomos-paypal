@@ -1,0 +1,251 @@
+{
+ "body": {
+  "ai_execution": {
+   "ai_record_digest": "30d6bb5124ac1f347cdf25a93c27861847416d6c9b049e059fc9cc4de44e66db",
+   "authorization_ref": "AIAUTH-20261017-TEST1",
+   "cost": {
+    "authorization_totals_after": {
+     "execution_ids": [
+      "EXEC-AF2F9F8986DF"
+     ],
+     "requests": 1,
+     "tokens": 8127,
+     "usd": "0.073634"
+    },
+    "estimated_charge_usd": "0.073634",
+    "price_basis": "OWNER_CONFIRMED (>= reference table)",
+    "worst_case_usd": "0.3405864"
+   },
+   "execution_class": "REAL_MODEL_EXECUTION",
+   "execution_policy": {
+    "allowed_payment_environments": [
+     "MOCK"
+    ],
+    "authorization_id": "AIAUTH-20261017-TEST1",
+    "bound_data_dir": "/root/.config/autonomos-paypal/r1d-real-ai-test-1/var",
+    "effort": "medium",
+    "execution_class": "REAL_MODEL_EXECUTION",
+    "input_estimate_overhead_tokens": 4000,
+    "max_executions": 1,
+    "max_input_tokens_per_request": 34000,
+    "max_output_tokens_per_request": 12000,
+    "max_requests_per_execution": 1,
+    "max_requests_total": 1,
+    "max_total_tokens": 46000,
+    "max_usd_total": "0.50",
+    "model": "claude-opus-5-5",
+    "not_after": 1792303200.0,
+    "price_basis": "OWNER_CONFIRMED (>= reference table)",
+    "price_usd_per_mtok": {
+     "input": "4.40",
+     "output": "22.00"
+    },
+    "provider": "anthropic_messages",
+    "request_timeout_s": 600.0
+   },
+   "model_requests": 1,
+   "outcome": "DELIVERED_PARTIAL",
+   "provider": "anthropic_messages",
+   "provider_request_ids": [
+    "req_011Cg7ZywMA4FMtZQC9G2QbX"
+   ],
+   "real_model_inference": true,
+   "reported_models": [
+    "claude-opus-5-5"
+   ],
+   "request_digests": [
+    "9ecf64ef163323c9865ee5fbe16ff88ab28e9e392e733f316d93bc56e243c4b3"
+   ],
+   "requested_model": "claude-opus-5-5",
+   "response_digests": [
+    "7b57bfaedf9723496b06a257851c4fbb89a9e130272904d9bce2fd5bb0f4c0b1"
+   ],
+   "source_collection": {
+    "files": {
+     "qcc_README.md": "1e2b9cd5945d97467f66604e7d4a7fea4ae54f957da83901ff9886556ed025ac",
+     "qkrl_IONQ_HARDWARE_PLAN.md": "1b35b3318d96d74ba299f9b993cb44934c88b8ad825edef738ede047cad5634b",
+     "qkrl_LIMITATIONS.md": "2ee2ee3ecf2bf5ed4bbefab334adf6db7e87395810daa06fc1606390e93edcfb",
+     "qkrl_PRIOR_WORK.md": "137fc3a21009c31faf508464e9f08abaede6c04a97f3c2f25a4f16451c8c2cf0",
+     "qkrl_PROVENANCE.md": "ee5a6d8387288c37c9b1c036d6c3f564a1aefeaa2816e81063c3646bb4a09727",
+     "qkrl_README.md": "67124f816303224dcfbfcb3a7848f7c9af640009d9a15dc803596e038e344c10",
+     "qkrl_REPRODUCIBILITY.md": "252ebcd55a977eff0e651fb19ce7a84193d4b76be31b75c78ba1b3abd373410e",
+     "qkrl_WITHHELD_EVIDENCE.md": "180abdd7c45119233ff7e626ee40fa20cd709b3549b6d6f59dc47f515221e7b5",
+     "qrg_README.md": "f4fd2d65355dffd5fb5f0e563afaced4518d008f653186d89c27f9c9f0fa4bc5"
+    },
+    "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57",
+    "set_id": "agentnomos_quantum"
+   },
+   "token_usage": {
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "input_tokens": 5975,
+    "output_tokens": 2152
+   },
+   "unsupported_claim_decisions": [
+    {
+     "decision": "WITHHELD",
+     "finding_id": "F1",
+     "quote_status": "QUOTE_VERIFIED",
+     "reasons": [
+      "EXECUTION_ASSERTION_NOT_IN_QUOTE"
+     ]
+    },
+    {
+     "claim_status": "CLAIM_UNCONFIRMED",
+     "decision": "DELIVERED",
+     "finding_id": "F2",
+     "reasons": [
+      "LEXICAL_COVERAGE_BELOW_0.8"
+     ]
+    }
+   ],
+   "validation": {
+    "claim_rule": "R1D-LEX-1",
+    "claim_supported": 3,
+    "claim_unconfirmed": 1,
+    "delivered": 4,
+    "model_findings": 5,
+    "rejected": 0,
+    "status": "PARTIAL",
+    "truth_independently_verified": 0,
+    "withheld": 1
+   }
+  },
+  "artifact": {
+   "digest": "4b68da684dbf55c582a317c56bafcaf9ad28c59c5a44131e969dee951c981f20",
+   "quotes_checked": 4,
+   "rejected_findings": 1,
+   "status": "PARTIAL",
+   "verified_findings": 4
+  },
+  "buyer_approval": {
+   "accepted": true,
+   "offer_digest_confirmed_by_buyer": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2"
+  },
+  "completed_at": 1792229176.616,
+  "environment": "MOCK",
+  "event_chain_head": "ebafffba2e4d09c1bc5f1d63ffa99068db6c4737a3da760d3dbae16b38de128c",
+  "evidence_manifest": [
+   {
+    "actor": "buyer",
+    "evidence_digest": "740e10ede1cc2c35f39f7ce97e990fd3fa9249b518bd670e27bbfbe90d55d1b4",
+    "evidence_kind": "request",
+    "hash": "2e69db52aecd4543c0312c57e5cb91011329342e864d3e68073ddc77a6655e60",
+    "seq": 1,
+    "to": "TASK_REQUESTED"
+   },
+   {
+    "actor": "policy",
+    "evidence_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2",
+    "evidence_kind": "offer",
+    "hash": "3c512c637d762fc863f2bf2b52f4c2bc83e4c06395192ae39714d3a4c3837a12",
+    "seq": 2,
+    "to": "OFFER_ISSUED"
+   },
+   {
+    "actor": "policy",
+    "evidence_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2",
+    "evidence_kind": "offer",
+    "hash": "65bbab366aaebe97a30791417078cfe9e606ff4c4c547d82cdd2a0f2af988dc7",
+    "seq": 3,
+    "to": "BUYER_APPROVAL_REQUIRED"
+   },
+   {
+    "actor": "payment_gateway",
+    "evidence_digest": "9551e4e14aa3262c9d0024d809cc18a341c0c4e34de03ee5f5dc19e86fdee69b",
+    "evidence_kind": "provider_order",
+    "hash": "4f57138e6406aee9d2d261222ba1cf627344d1a1064821b2ea63f23d1ff9e957",
+    "seq": 4,
+    "to": "ORDER_CREATED"
+   },
+   {
+    "actor": "payment_gateway",
+    "evidence_digest": "2b80aa814c17f30203bf1974ea8dbc85970f15163716ba4facf73a56ab5a9fd9",
+    "evidence_kind": "approval_link",
+    "hash": "61a855355d59e43de9ba4547e7325189c52f62455af04fa2f81c65d3e546e5d0",
+    "seq": 5,
+    "to": "PAYMENT_PENDING"
+   },
+   {
+    "actor": "payment_verifier",
+    "evidence_digest": "3095e0b4264982fc9684fc1eb46f6af8b1caedddda6bd839380d4f1319c434d5",
+    "evidence_kind": "payment_verification",
+    "hash": "2837c770851763a054c7028dc3f35e464e256b372bd1539624aa26c0bf9b5239",
+    "seq": 6,
+    "to": "PAYMENT_CAPTURED"
+   },
+   {
+    "actor": "payment_verifier",
+    "evidence_digest": "3095e0b4264982fc9684fc1eb46f6af8b1caedddda6bd839380d4f1319c434d5",
+    "evidence_kind": "payment_verification",
+    "hash": "b83ae59984fce4702b99e276432c46eb3db7a4cca9b33c9055ef8fec49dfb913",
+    "seq": 7,
+    "to": "EXECUTION_AUTHORIZED"
+   },
+   {
+    "actor": "executor",
+    "evidence_digest": "e0175e824aefca0ba23502a571cacb0aa33e1c4197142f7a4fbc3948ea2f9fec",
+    "evidence_kind": "execution_claim",
+    "hash": "b4c50be915126d1ca14e726a76cf47c4d8c72f40c6922916f2a7f34b8109c233",
+    "seq": 8,
+    "to": "EXECUTING"
+   },
+   {
+    "actor": "artifact_verifier",
+    "evidence_digest": "af7f35ed23b933d78bb8b50ad6807a0182a6306ed4c06ade1ac6a1bfe6bec2a0",
+    "evidence_kind": "artifact_verification",
+    "hash": "ebafffba2e4d09c1bc5f1d63ffa99068db6c4737a3da760d3dbae16b38de128c",
+    "seq": 9,
+    "to": "DELIVERY_VERIFIED"
+   }
+  ],
+  "execution": {
+   "execution_id": "EXEC-AF2F9F8986DF",
+   "started": 1792229157.3242297
+  },
+  "issuer": {
+   "algorithm": "Ed25519 (RFC 8032)",
+   "key_id": "demo-ed25519-fc870792b0d31fda",
+   "public_key_hex": "fc870792b0d31fda811916ef0f7728adf2e97c0b3049b7041e4eb1d44af419b7"
+  },
+  "limits": [
+   "A sandbox capture is test money. It is not revenue and not settlement.",
+   "A COMPLETED capture can still be refunded or reversed; delivery does not make the payment final.",
+   "Payment fields come from a server-side provider query at verification time; to check PayPal's origin, query the order again with the provider (the receipt's own signature cannot prove it).",
+   "The signature uses a locally generated DEMO key with no identity binding beyond this deployment.",
+   "Findings are verified as verbatim quotes from the named document set, not as true statements about the world.",
+   "AI execution class is stated in ai_execution.execution_class. Only REAL_MODEL_EXECUTION means a language model was called; FIXTURE_EXECUTION and MOCK_EXECUTION outputs are not model inference.",
+   "QUOTE_VERIFIED means the quotation occurs verbatim (whitespace-normalized) in the named pinned document. CLAIM_SUPPORTED (rule R1D-LEX-1) is lexical support, not semantic entailment. No finding is independently verified as true.",
+   "Token usage and cost are the provider's reported usage for completed requests; requests with an unknown outcome are charged at their worst case. USD figures are estimates at the authorization's price, not an invoice.",
+   "A REAL_MODEL_EXECUTION label is the issuer's record. Confirming it independently needs the provider's own logs for the listed request ids."
+  ],
+  "offer": {
+   "amount": "1.00",
+   "currency": "USD",
+   "document_set": {
+    "id": "agentnomos_quantum",
+    "manifest_digest": "3594ca9a07785992bb2afa3039b7596b558b94708b4cc0959fe1d75b3fc80b57"
+   },
+   "offer_digest": "39047880fed2265407b6b47763d538213e14acc4aabd4c68632668dbed173be2",
+   "offer_id": "OFFER-0400E999CB9D"
+  },
+  "payment": {
+   "capture_id": "MOCK-CAPTURE-000001",
+   "capture_status": "COMPLETED",
+   "checks_passed": 9,
+   "checks_total": 9,
+   "order_id": "MOCK-ORDER-000001",
+   "provider": "mock",
+   "verification_source": "server-side GET /v2/checkout/orders/MOCK-ORDER-000001 (MOCK)",
+   "verification_verdict": "CAPTURE_VERIFIED",
+   "verified_at": 1792229157.306
+  },
+  "receipt_version": "2",
+  "task": {
+   "capability": "research_snapshot",
+   "question": "What hardware evidence exists for the quantum-kernel experiment, and what is still unverified?",
+   "task_id": "TASK-2A5B712F8B93"
+  }
+ },
+ "signature_hex": "132b6b2b506617a9d30a2565660329d98141929602928c4d424cc7c31231656146d459451fc79480ccc91efc2c6eede7100a148efa1e32a31011ec98d02b0007"
+}

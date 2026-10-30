@@ -1,0 +1,20 @@
+{
+ "authorization_id": "AIAUTH-YYYYMMDD-R1E1-LIVE1",
+ "mode": "REAL_MODEL_EXECUTION",
+ "provider": "anthropic_messages",
+ "model": "claude-opus-5-5",
+ "effort": "medium",
+ "max_executions": 1,
+ "max_requests_total": 1,
+ "max_requests_per_execution": 1,
+ "max_input_tokens_per_request": 34000,
+ "max_output_tokens_per_request": 12000,
+ "max_total_tokens": 46000,
+ "max_usd_total": "0.50",
+ "price_usd_per_mtok": {"input": "4.40", "output": "22.00"},
+ "allowed_payment_environments": ["SANDBOX"],
+ "request_timeout_s": 600,
+ "not_after": "YYYY-MM-DDTHH:MM:SSZ (at most 24 h after the owner writes it)",
+ "bound_data_dir": "/root/.config/autonomos-paypal/r1e1-live-demo-1/data",
+ "owner_statement": "TEMPLATE ONLY - the owner writes their own statement authorizing one real model request for one PayPal Sandbox-paid task."
+}
